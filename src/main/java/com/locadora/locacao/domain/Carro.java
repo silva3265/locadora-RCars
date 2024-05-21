@@ -23,7 +23,6 @@ public class Carro implements Serializable {
 	@NotBlank(message = "Campo Cor é Obrigatorio")
 	private String cor;
 	
-	@NotBlank(message = "Campo Ano Fabricação é Obrigatorio")
 	private Integer anoFabricacao;
 	
 	@NotBlank(message = "Campo Fabricante é Obrigatorio")
@@ -36,7 +35,7 @@ public class Carro implements Serializable {
 		super();
 	}
 
-	public Carro(Long id, String descricao, String cor, Integer anoFabricacao, String fabricante, String modelo) {
+	public Carro(Long id, Integer anoFabricacao, String cor, String descricao,  String fabricante, String modelo) {
 		this.id = id;
 		this.descricao = descricao;
 		this.cor = cor;
